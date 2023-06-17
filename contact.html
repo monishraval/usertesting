@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="login-page.css">
+  <script defer src="login-page.js"></script>
+  <script id='_webengage_script_tag' type='text/javascript'>
+    var webengage;!function(w,e,b,n,g){function o(e,t){e[t[t.length-1]]=function(){r.__queue.push([t.join("."),
+    arguments])}}var i,s,r=w[b],z=" ",l="init options track screen onReady".split(z),a="webPersonalization feedback survey notification notificationInbox".split(z),c="options render clear abort".split(z),p="Prepare Render Open Close Submit Complete View Click".split(z),u="identify login logout setAttribute".split(z);if(!r||!r.__v){for(w[b]=r={__queue:[],__v:"6.0",user:{}},i=0;i < l.length;i++)o(r,[l[i]]);for(i=0;i < a.length;i++){for(r[a[i]]={},s=0;s < c.length;s++)o(r[a[i]],[a[i],c[s]]);for(s=0;s < p.length;s++)o(r[a[i]],[a[i],"on"+p[s]])}for(i=0;i < u.length;i++)o(r.user,["user",u[i]]);setTimeout(function(){var f=e.createElement("script"),d=e.getElementById("_webengage_script_tag");f.type="text/javascript",f.async=!0,f.src=("https:"==e.location.protocol?"https://widgets.in.webengage.com":"http://widgets.in.webengage.com")+"/js/webengage-min-v-6.0.js",d.parentNode.insertBefore(f,d)})}}(window,document,"webengage");webengage.init("in~~47b6667b");
+    </script>
+</head>
+
+<body onload="requireLogin()">
+    <header>
+      <h2 id="mypage"><a href="signin.html">My Page</a></h2>
+      <nav id="menu">
+        <a href="signin.html" onclick="signin()">Home</a> &nbsp;&nbsp;&nbsp;
+        <a href="about.html" onclick="about()">About Us</a>&nbsp;&nbsp;&nbsp;
+        <a href="contact.html" onclick="contact()">Contact</a> &nbsp;&nbsp;&nbsp;
+        <a href="index.html" onclick="logout()">Logout</a>  
+    </nav>
+  </header>
+  <main id="main-holder">
+    <div id="para"></div>
+    <input type="button" value="Contact us via Feedback" id="login-form-submit" onclick="feedback()">
+    <br><p id="feedback"></p>
+    <p>
+      <h1 id="C">Customer Change</h1>
+    </p>
+    <table id="table">
+      <tr><td><input type="button" value="Click for 0 to appear" id="zero" onclick="zero()"></td>
+      <td><input type="button" value="Click for 1 to appear" id="one" onclick="one()"></td></tr>
+     <tr><td><h3 id="number"></h3></td></tr>
+    </table>
+    <span id="hoverSpan">Hover over me!</span>
+<div id="hover">I will show on hover</div>
+  </main>
+  </body>
+</html>
