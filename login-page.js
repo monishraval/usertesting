@@ -76,7 +76,7 @@ arguments])}}var i,s,r=w[b],z=" ",l="init options track screen onReady".split(z)
           webengage.user.setAttribute("age_web", 26);
         }
       alert("You have successfully logged in.");
-      window.location.href="signin.html";
+     // window.location.href="signin.html";
       webengage.track('MainPageView');
       sessionStorage.setItem('loggedIn', true);
       }else {
