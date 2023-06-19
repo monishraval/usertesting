@@ -77,9 +77,7 @@ arguments])}}var i,s,r=w[b],z=" ",l="init options track screen onReady".split(z)
         }
       alert("You have successfully logged in.");
       window.location.href="signin.html";
-      webengage.track('MainPageView', {
-        'isClicked' : true
-    });
+      webengage.track('MainPageView');
       sessionStorage.setItem('loggedIn', true);
       }else {
           loginErrorMsg.style.opacity = 1;
