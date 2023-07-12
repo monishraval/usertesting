@@ -10,7 +10,7 @@ arguments])}}var i,s,r=w[b],z=" ",l="init options track screen onReady".split(z)
       const username = loginForm.username.value;
       const password = loginForm.password.value;
 
-      if ((username === "ankita" && password === "123") || (username=== "monish" && password === "123") || (username === "anku" && password === "123") || (username === "kunal" && password === "123")) {
+      if ((username === "ankita" && password === "123") || (username === "monish" && password === "123") || (username === "anku" && password === "123") || (username === "kunal" && password === "123")) {
         webengage.user.login(username);
 
         //Webengage Identification
