@@ -34,7 +34,7 @@ arguments])}}var i,s,r=w[b],z=" ",l="init options track screen onReady".split(z)
           webengage.user.setAttribute('we_email', 'kunal.prasad@webengage.com');
           webengage.user.setAttribute('we_first_name', 'Kunal');
           webengage.user.setAttribute('we_last_name', 'Prasad');
-        }else if(username == "monish"){
+        }else(username == "monish"){
           webengage.user.setAttribute('we_email', 'monishraval@gmail.com');
           webengage.user.setAttribute('we_first_name', 'Monish');
           webengage.user.setAttribute('we_last_name', 'Raval');
