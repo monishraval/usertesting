@@ -112,8 +112,6 @@ function logout(){
         alert("You have successfully logged out.");
         window.location.href="index.html"
         webengage.user.logout();
-        sessionStorage.setItem('loggedIn', false);
-        document.cookie = "cookiename= ; expires = Thu, 01 Jan 1970 00:00:00 GMT"
     }
 }
 
@@ -125,18 +123,3 @@ function newpage(){
 });
 }
 
-// function to check if user is logged in
-function isLoggedIn() {
-  const loggedIn = sessionStorage.getItem('loggedIn');
-  if (loggedIn === 'true') {
-    return true;
-  }
-  return false;
-}
-
-// function to redirect to login page if not logged in
-function requireLogin() {
-  if (!isLoggedIn()) {
-    window.location.href="index.html";
-  }
-}
